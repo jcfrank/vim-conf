@@ -61,3 +61,6 @@ filetype plugin indent on     " required!
 """ turn filetype on when vundle is over
 filetype on
 
+""" supertab and snipMate working together
+let g:SuperTabDefaultCompletionType = "context"
+
