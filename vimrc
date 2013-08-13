@@ -1,5 +1,5 @@
 
-"customize settings
+""" customize settings
 syntax on
 set number
 set showmatch
@@ -20,7 +20,7 @@ nmap <C-\>f :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>i :cs find i <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
-"vundle
+""" vundle
 filetype off 	" required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -32,13 +32,13 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 Bundle 'FuzzyFinder'
-Bundle 'SuperTab'
 Bundle 'taglist.vim'
 Bundle 'gsession.vim'
-Bundle 'AutoComplPop'
 Bundle 'snipMate'
-Bundle 'fugitive.vim'
+Bundle 'AutoComplPop'
+Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
+Bundle 'https://github.com/ervandew/supertab.git'
 
 filetype plugin indent on     " required!
 "
@@ -51,6 +51,6 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-"turn filetype on when vundle is over
+""" turn filetype on when vundle is over
 filetype on
 
