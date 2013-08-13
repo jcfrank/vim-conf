@@ -45,7 +45,7 @@ Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 """ try /cc for comments
-Bundle 'The-NERD-Commenter'
+"Bundle 'The-NERD-Commenter'
 
 filetype plugin indent on     " required!
 "
