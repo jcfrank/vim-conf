@@ -7,6 +7,10 @@ set ignorecase
 set incsearch
 set ruler
 set confirm
+set shiftwidth=4
+set tabstop=8
+set softtabstop=4
+"set expandtab
 colorscheme torte
 
 "These are to let MacVim work as like in linux
@@ -39,6 +43,9 @@ Bundle 'AutoComplPop'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
 Bundle 'https://github.com/ervandew/supertab.git'
+Bundle 'https://github.com/scrooloose/nerdcommenter.git'
+""" try /cc for comments
+Bundle 'The-NERD-Commenter'
 
 filetype plugin indent on     " required!
 "
