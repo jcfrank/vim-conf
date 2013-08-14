@@ -46,6 +46,7 @@ Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 """ try /cc for comments
 "Bundle 'The-NERD-Commenter'
+Bundle 'https://github.com/tfnico/vim-gradle.git'
 
 filetype plugin indent on     " required!
 "
