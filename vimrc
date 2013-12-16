@@ -10,7 +10,7 @@ set confirm
 set shiftwidth=4
 set tabstop=8
 set softtabstop=4
-"set expandtab
+set expandtab
 colorscheme torte
 
 "These are to let MacVim work as like in linux
@@ -42,10 +42,9 @@ Bundle 'snipMate'
 Bundle 'AutoComplPop'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
-Bundle 'https://github.com/ervandew/supertab.git'
+"Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
-""" try /cc for comments
-"Bundle 'The-NERD-Commenter'
+""" try \cc for comments, \cu to uncomment.
 Bundle 'https://github.com/tfnico/vim-gradle.git'
 
 filetype plugin indent on     " required!
@@ -61,7 +60,4 @@ filetype plugin indent on     " required!
 
 """ turn filetype on when vundle is over
 filetype on
-
-""" supertab and snipMate working together
-let g:SuperTabDefaultCompletionType = "context"
 
