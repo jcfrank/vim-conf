@@ -46,6 +46,8 @@ Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 """ try \cc for comments, \cu to uncomment.
 Bundle 'https://github.com/tfnico/vim-gradle.git'
+Bundle 'https://github.com/jimenezrick/vimerl.git'
+Bundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on     " required!
 "
