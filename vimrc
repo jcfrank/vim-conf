@@ -11,7 +11,7 @@ set shiftwidth=4
 set tabstop=8
 set softtabstop=4
 set expandtab
-colorscheme torte
+colorscheme default
 
 "These are to let MacVim work as like in linux
 :cs add cscope.out
@@ -49,6 +49,7 @@ Bundle 'https://github.com/tfnico/vim-gradle.git'
 Bundle 'https://github.com/jimenezrick/vimerl.git'
 Bundle 'vim-ruby/vim-ruby'
 
+""" turn filetype on when vundle is over
 filetype plugin indent on     " required!
 "
 " Brief help
@@ -60,6 +61,7 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-""" turn filetype on when vundle is over
-filetype on
+""" for my own habbits
+imap <C-\>/ <C-x><C-u>
+imap <C-\>. <C-x><C-o>
 
