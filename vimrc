@@ -11,6 +11,7 @@ set shiftwidth=4
 set tabstop=8
 set softtabstop=4
 set expandtab
+set nocompatible
 colorscheme default
 
 "These are to let MacVim work as like in linux
@@ -65,4 +66,7 @@ filetype plugin indent on     " required!
 """ for my own habbits
 imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
+
+""" for eclim
+let g:EclimLocateFileScope = 'workspace'
 
