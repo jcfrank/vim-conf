@@ -20,3 +20,8 @@ Finally, exit vim and execute script:
 
 	./removeDupSnippets.sh
 
+vim-cheatsheet
+====
+
+[cheatsheet.md](cheatsheet.md)
+
