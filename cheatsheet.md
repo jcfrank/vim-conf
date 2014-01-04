@@ -58,5 +58,5 @@ only list shortcuts I use frequently.
 
 - :vsplit:          split window vertically
 
-- C-w <arraow>:     switch between splitted windows
+- C-w \<arrow\>:     switch between splitted windows
 
