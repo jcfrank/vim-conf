@@ -50,4 +50,13 @@ only list shortcuts I use frequently.
 
 - a:            append edit.
 
+- tabedit <file>:   open a tab and edit file
+
+- gt/gT:            switch between tabs
+
+- :split:           split window horizontally
+
+- :vsplit:          split window vertically
+
+- C-w <arraow>:     switch between splitted windows
 
