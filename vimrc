@@ -50,6 +50,8 @@ Bundle 'https://github.com/tfnico/vim-gradle.git'
 Bundle 'https://github.com/jimenezrick/vimerl.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'https://github.com/scrooloose/syntastic.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
