@@ -12,7 +12,7 @@ set tabstop=8
 set softtabstop=4
 set expandtab
 set nocompatible
-colorscheme default
+colorscheme koehler
 
 "These are to let MacVim work as like in linux
 :cs add cscope.out
@@ -38,7 +38,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'FuzzyFinder'
 Bundle 'taglist.vim'
-Bundle 'gsession.vim'
 Bundle 'snipMate'
 Bundle 'AutoComplPop'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
@@ -52,6 +51,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'https://github.com/scrooloose/syntastic.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/xolox/vim-session.git'
+Bundle 'https://github.com/xolox/vim-misc.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -71,4 +72,7 @@ imap <C-\>. <C-x><C-o>
 
 """ for eclim
 let g:EclimLocateFileScope = 'workspace'
+
+""" for ruby
+autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
