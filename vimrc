@@ -42,7 +42,6 @@ Bundle 'snipMate'
 Bundle 'AutoComplPop'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
-"Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 """ try \cc for comments, \cu to uncomment.
 Bundle 'https://github.com/tfnico/vim-gradle.git'
@@ -71,9 +70,11 @@ filetype plugin indent on     " required!
 imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
 
-""" for eclim
-let g:EclimLocateFileScope = 'workspace'
-
 """ for ruby
 autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
+
+""" MacVim only settings
+if has("gui_macvim")
+    set guifont=Monaco:h14
+endif
 
