@@ -12,7 +12,7 @@ set tabstop=8
 set softtabstop=4
 set expandtab
 set nocompatible
-colorscheme koehler
+colorscheme murphy
 
 "These are to let MacVim work as like in linux
 :cs add cscope.out
@@ -75,6 +75,6 @@ autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 """ MacVim only settings
 if has("gui_macvim")
-    set guifont=Monaco:h14
+    set guifont=Courier:h16
 endif
 
