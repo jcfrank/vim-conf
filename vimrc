@@ -1,7 +1,7 @@
 
 """ customize settings
 syntax on
-set number
+"set number
 set showmatch
 set ignorecase
 set incsearch
@@ -53,6 +53,7 @@ Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/xolox/vim-session.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
 Bundle 'https://github.com/gkz/vim-ls.git'
+Bundle 'https://github.com/vim-erlang/vim-erlang-tags.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
