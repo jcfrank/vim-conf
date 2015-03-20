@@ -45,7 +45,7 @@ Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 """ try \cc for comments, \cu to uncomment.
 Bundle 'https://github.com/tfnico/vim-gradle.git'
-Bundle 'https://github.com/jimenezrick/vimerl.git'
+"Bundle 'https://github.com/jimenezrick/vimerl.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'https://github.com/scrooloose/syntastic.git'
@@ -54,6 +54,8 @@ Bundle 'https://github.com/xolox/vim-session.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
 Bundle 'https://github.com/gkz/vim-ls.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-tags.git'
+Bundle 'https://github.com/vim-erlang/vim-erlang-compiler.git'
+Bundle 'https://github.com/vim-erlang/vim-erlang-runtime.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
