@@ -14,6 +14,14 @@ set expandtab
 set nocompatible
 colorscheme murphy
 
+"for airline
+set laststatus=2
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_theme = 'wombat'
+
 "These are to let MacVim work as like in linux
 :cs add cscope.out
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -42,10 +50,9 @@ Bundle 'snipMate'
 Bundle 'AutoComplPop'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
-Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 """ try \cc for comments, \cu to uncomment.
+Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 Bundle 'https://github.com/tfnico/vim-gradle.git'
-"Bundle 'https://github.com/jimenezrick/vimerl.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'https://github.com/scrooloose/syntastic.git'
@@ -56,6 +63,7 @@ Bundle 'https://github.com/gkz/vim-ls.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-tags.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-compiler.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-runtime.git'
+Bundle 'https://github.com/bling/vim-airline.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -73,11 +81,23 @@ filetype plugin indent on     " required!
 imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
 
-""" for ruby
+""" filetype specific indent
 autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 """ MacVim only settings
 if has("gui_macvim")
-    set guifont=Courier:h16
+    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h16
 endif
+
+""" for ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
