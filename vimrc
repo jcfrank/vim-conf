@@ -44,16 +44,16 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-Bundle 'FuzzyFinder'
+Bundle 'https://github.com/vim-scripts/FuzzyFinder.git'
 Bundle 'taglist.vim'
 Bundle 'snipMate'
-Bundle 'AutoComplPop'
+Bundle 'https://github.com/vim-scripts/AutoComplPop.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'
 """ try \cc for comments, \cu to uncomment.
 Bundle 'https://github.com/scrooloose/nerdcommenter.git'
 Bundle 'https://github.com/tfnico/vim-gradle.git'
-Bundle 'vim-ruby/vim-ruby'
+Bundle 'https://github.com/vim-ruby/vim-ruby.git'
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'https://github.com/scrooloose/syntastic.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
