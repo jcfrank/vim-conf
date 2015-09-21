@@ -104,3 +104,7 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
+""" disable auto restore session
+let g:session_autoload = 'no'
+let g:session_autosave = 'no'
+
