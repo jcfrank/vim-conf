@@ -12,6 +12,7 @@ set tabstop=8
 set softtabstop=4
 set expandtab
 set nocompatible
+set shell=bash
 colorscheme murphy
 
 "for airline
