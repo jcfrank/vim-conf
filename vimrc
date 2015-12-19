@@ -68,6 +68,7 @@ Bundle 'https://github.com/vim-erlang/vim-erlang-compiler.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-runtime.git'
 Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/derekwyatt/vim-scala.git'
+Bundle 'https://github.com/dag/vim-fish.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
