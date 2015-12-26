@@ -2,6 +2,7 @@
 """ customize settings
 syntax on
 "set number
+set relativenumber
 set showmatch
 set ignorecase
 set incsearch
@@ -90,6 +91,7 @@ imap <C-\>. <C-x><C-o>
 autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype erlang setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 """ MacVim only settings
 if has("gui_macvim")
@@ -102,7 +104,7 @@ let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'file': '\v\.(exe|so|dll|beam|pyc)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
