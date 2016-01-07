@@ -71,6 +71,8 @@ Bundle 'https://github.com/bling/vim-airline.git'
 Bundle 'https://github.com/derekwyatt/vim-scala.git'
 Bundle 'https://github.com/dag/vim-fish.git'
 Bundle 'https://github.com/vaibhav276/Conque-Shell.git'
+Bundle 'https://github.com/jceb/vim-orgmode.git'
+Bundle 'https://github.com/tpope/vim-speeddating.git'
 
 """ turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -93,6 +95,7 @@ autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd Filetype erlang setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufNewFile,BufRead *.om set filetype=org
 
 """ MacVim only settings
 if has("gui_macvim")
