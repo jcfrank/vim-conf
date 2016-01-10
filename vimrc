@@ -95,7 +95,7 @@ imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
 nmap \b :Unite buffer<CR>
 nmap \c :Unite command<CR>
-nmap \m :BookmarkShowAll<CR>
+nmap \m :Unite vim_bookmarks<CR>
 
 "" unite
 autocmd BufWinEnter *\[unite\]* AutoComplPopDisable
