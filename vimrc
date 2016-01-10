@@ -75,6 +75,7 @@ Bundle 'https://github.com/vaibhav276/Conque-Shell.git'
 Bundle 'https://github.com/jceb/vim-orgmode.git'
 Bundle 'https://github.com/tpope/vim-speeddating.git'
 Bundle 'https://github.com/Shougo/unite.vim.git'
+Bundle 'https://github.com/MattesGroeger/vim-bookmarks.git'
 
 "" turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -89,13 +90,14 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 ""
 
-"" my own habbits
+"" key mappings
 imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
-
-"" unite
 nmap \b :Unite buffer<CR>
 nmap \c :Unite command<CR>
+nmap \m :BookmarkShowAll<CR>
+
+"" unite
 autocmd BufWinEnter *\[unite\]* AutoComplPopDisable
 
 "" filetype specific settings
@@ -108,7 +110,7 @@ autocmd FileType org let maplocalleader="\\"
 
 "" MacVim only
 if has("gui_macvim")
-    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h16
+    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
 endif
 
 "" ctrlp
@@ -124,4 +126,10 @@ let g:ctrlp_custom_ignore = {
 "" disable auto restore session
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
+
+"" bookmarks
+"highlight BookmarkSign ctermbg=NONE ctermfg=160
+"highlight BookmarkLine ctermbg=194 ctermfg=NONE
+let g:bookmark_sign = 'M'
+let g:bookmark_highlight_lines = 1
 
