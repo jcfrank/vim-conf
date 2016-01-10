@@ -47,10 +47,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "" bundles
-Bundle 'https://github.com/eparreno/vim-l9.git'
+Bundle 'https://github.com/vim-scripts/L9.git'
 Bundle 'https://github.com/vim-scripts/FuzzyFinder.git'
-Bundle 'taglist.vim'
-Bundle 'snipMate'
+Bundle 'https://github.com/vim-scripts/taglist.vim.git'
+Bundle 'https://github.com/msanders/snipmate.vim.git'
 Bundle 'https://github.com/vim-scripts/AutoComplPop.git'
 Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/jcfrank/snipmate-snippets.git'

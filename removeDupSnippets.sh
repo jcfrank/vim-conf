@@ -1,5 +1,6 @@
+#!/bin/bash
 
-DIR=~/.vim/bundle/snipMate
+DIR=~/.vim/bundle/snipMate.vim
 
 echo "backup and delete snipMate snippets folder ..."
 # check if snipMate/snippets folder exists
