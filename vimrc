@@ -96,6 +96,7 @@ imap <C-\>. <C-x><C-o>
 "" unite
 nmap \b :Unite buffer<CR>
 nmap \c :Unite command<CR>
+autocmd BufWinEnter *\[unite\]* AutoComplPopDisable
 
 "" filetype specific settings
 autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
