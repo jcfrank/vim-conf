@@ -96,6 +96,8 @@ imap <C-\>. <C-x><C-o>
 nmap \b :Unite buffer<CR>
 nmap \c :Unite command<CR>
 nmap \m :Unite vim_bookmarks<CR>
+nmap \d :FufDir<CR>
+nmap \f :FufCoverageFile<CR>
 
 "" unite
 autocmd BufWinEnter *\[unite\]* AutoComplPopDisable
