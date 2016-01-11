@@ -108,9 +108,12 @@ autocmd Filetype erlang setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufNewFile,BufRead *.om set filetype=org
 autocmd FileType org let maplocalleader="\\"
 
-"" MacVim only
 if has("gui_macvim")
+    "" MacVim only
     set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
+elseif has("gui_running")
+    """ for my ubuntu
+    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
 endif
 
 "" ctrlp
