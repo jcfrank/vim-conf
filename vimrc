@@ -100,7 +100,8 @@ nmap \d :FufDir<CR>
 nmap \f :FufFile<CR>
 
 "" unite
-autocmd BufWinEnter *\[unite\]* AutoComplPopDisable
+autocmd BufWinEnter *\[unite\]* AutoComplPopLock
+autocmd BufWinLeave *\[unite\]* AutoComplPopUnlock
 
 "" filetype specific settings
 autocmd FileType rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -113,8 +114,12 @@ autocmd FileType org let maplocalleader="\\"
 if has("gui_macvim")
     "" MacVim only
     set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
+    set lines=35
+elseif exists("neovim_dot_app")
+    "" NeoVim.app
+    set lines=35
 elseif has("gui_running")
-    """ for my ubuntu
+    "" for ubuntu
     set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
 endif
 
