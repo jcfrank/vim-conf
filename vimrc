@@ -98,6 +98,7 @@ nmap \c :Unite command<CR>
 nmap \m :Unite vim_bookmarks<CR>
 nmap \d :FufDir<CR>
 nmap \f :FufFile<CR>
+nmap \l :FufLine<CR>
 
 "" unite
 autocmd BufWinEnter *\[unite\]* AutoComplPopLock
