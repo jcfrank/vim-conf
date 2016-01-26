@@ -14,6 +14,7 @@ set softtabstop=4
 set expandtab
 set nocompatible
 set shell=bash
+set cursorline
 colorscheme murphy
 
 "" airline
