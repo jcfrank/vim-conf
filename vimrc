@@ -95,7 +95,7 @@ filetype plugin indent on     " required!
 "" key mappings
 imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
-nmap \b :Unite buffer<CR>
+nmap \b :Buffers<CR>
 nmap \c :Unite command<CR>
 nmap \m :Unite vim_bookmarks<CR>
 nmap \d :FufDir<CR>
