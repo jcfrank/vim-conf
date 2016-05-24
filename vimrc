@@ -78,6 +78,7 @@ Bundle 'https://github.com/jceb/vim-orgmode.git'
 Bundle 'https://github.com/tpope/vim-speeddating.git'
 Bundle 'https://github.com/Shougo/unite.vim.git'
 Bundle 'https://github.com/MattesGroeger/vim-bookmarks.git'
+Bundle 'https://github.com/elixir-lang/vim-elixir.git'
 
 "" turn filetype on when vundle is over
 filetype plugin indent on     " required!
