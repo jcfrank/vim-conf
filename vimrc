@@ -15,6 +15,7 @@ set expandtab
 set nocompatible
 set shell=bash
 set cursorline
+set backspace=2
 colorscheme murphy
 
 "" airline
@@ -79,6 +80,7 @@ Bundle 'https://github.com/tpope/vim-speeddating.git'
 Bundle 'https://github.com/Shougo/unite.vim.git'
 Bundle 'https://github.com/MattesGroeger/vim-bookmarks.git'
 Bundle 'https://github.com/elixir-lang/vim-elixir.git'
+Bundle 'https://github.com/ledger/vim-ledger.git'
 
 "" turn filetype on when vundle is over
 filetype plugin indent on     " required!
