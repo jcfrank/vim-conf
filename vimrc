@@ -16,6 +16,7 @@ set nocompatible
 set shell=bash
 set cursorline
 set backspace=2
+set encoding=utf8
 colorscheme murphy
 
 "" airline
