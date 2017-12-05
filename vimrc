@@ -17,6 +17,8 @@ set shell=bash
 set cursorline
 set backspace=2
 set encoding=utf8
+"" Highlighting column 80 for visual width
+set colorcolumn=80
 colorscheme murphy
 
 "" airline
@@ -99,12 +101,13 @@ filetype plugin indent on     " required!
 "" key mappings
 imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
-nmap \b :Buffers<CR>
+nmap \b :Unite buffer<CR>
 nmap \c :Unite command<CR>
 nmap \m :Unite vim_bookmarks<CR>
 nmap \d :FufDir<CR>
 nmap \f :FufFile<CR>
 nmap \l :FufLine<CR>
+nmap \t :tabedit<CR>
 
 "" unite
 autocmd BufWinEnter *\[unite\]* AutoComplPopLock
@@ -149,4 +152,12 @@ let g:session_autosave = 'no'
 "highlight BookmarkLine ctermbg=194 ctermfg=NONE
 let g:bookmark_sign = 'M'
 let g:bookmark_highlight_lines = 1
+
+"" syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_autoloc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {'mode': 'passive'}
+map <F11> :SyntasticCheck
 
