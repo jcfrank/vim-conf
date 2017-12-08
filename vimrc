@@ -20,6 +20,7 @@ set encoding=utf8
 "" Highlighting column 80 for visual width
 set colorcolumn=80
 colorscheme murphy
+let mapleader = "\\\\"
 
 "" airline
 set laststatus=2
@@ -69,7 +70,6 @@ Bundle 'https://github.com/scrooloose/syntastic.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/xolox/vim-session.git'
 Bundle 'https://github.com/xolox/vim-misc.git'
-Bundle 'https://github.com/gkz/vim-ls.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-tags.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-compiler.git'
 Bundle 'https://github.com/vim-erlang/vim-erlang-runtime.git'
@@ -103,11 +103,14 @@ imap <C-\>/ <C-x><C-u>
 imap <C-\>. <C-x><C-o>
 nmap \b :Unite buffer<CR>
 nmap \c :Unite command<CR>
-nmap \m :Unite vim_bookmarks<CR>
 nmap \d :FufDir<CR>
 nmap \f :FufFile<CR>
 nmap \l :FufLine<CR>
+nmap \m :Unite vim_bookmarks<CR>
+nmap \n :NERDTreeToggle<CR>
+nmap \s :split<CR>
 nmap \t :tabedit<CR>
+nmap \v :vertical split<CR>
 
 "" unite
 autocmd BufWinEnter *\[unite\]* AutoComplPopLock
