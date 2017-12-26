@@ -19,6 +19,7 @@ set backspace=2
 set encoding=utf8
 "" Highlighting column 80 for visual width
 set colorcolumn=80
+set autoindent
 colorscheme murphy
 let mapleader = "\\\\"
 
@@ -84,6 +85,8 @@ Bundle 'https://github.com/Shougo/unite.vim.git'
 Bundle 'https://github.com/MattesGroeger/vim-bookmarks.git'
 Bundle 'https://github.com/elixir-lang/vim-elixir.git'
 Bundle 'https://github.com/ledger/vim-ledger.git'
+Bundle 'https://github.com/davidhalter/jedi-vim.git'
+Bundle 'https://github.com/Vimjas/vim-python-pep8-indent.git'
 
 "" turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -107,7 +110,7 @@ nmap \d :FufDir<CR>
 nmap \f :FufFile<CR>
 nmap \l :FufLine<CR>
 nmap \m :Unite vim_bookmarks<CR>
-nmap \n :NERDTreeToggle<CR>
+nmap \n :NERDTree %:h<CR>
 nmap \s :split<CR>
 nmap \t :tabedit<CR>
 nmap \v :vertical split<CR>
@@ -164,3 +167,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {'mode': 'passive'}
 map <F11> :SyntasticCheck
 
+"" jedi-vim
+let g:jedi#completions_enabled = 0
+let g:jedi#completions_command = "<C-]>"
+
+let g:pymode_indent = 0
