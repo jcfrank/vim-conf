@@ -87,6 +87,7 @@ Bundle 'https://github.com/elixir-lang/vim-elixir.git'
 Bundle 'https://github.com/ledger/vim-ledger.git'
 Bundle 'https://github.com/davidhalter/jedi-vim.git'
 Bundle 'https://github.com/Vimjas/vim-python-pep8-indent.git'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 "" turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -172,3 +173,6 @@ let g:jedi#completions_enabled = 0
 let g:jedi#completions_command = "<C-]>"
 
 let g:pymode_indent = 0
+
+"" indent guide
+let g:indent_guides_enable_on_vim_startup = 1
