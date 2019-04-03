@@ -30,6 +30,9 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_theme = 'badwolf'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "" let MacVim work like in linux
 :cs add cscope.out
@@ -145,10 +148,11 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn|egg-info)|(test_reports?|dist|build|node_modules))$',
   \ 'file': '\v\.(exe|so|dll|beam|pyc)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+let g:ctrlp_max_files = 0
 
 "" disable auto restore session
 let g:session_autoload = 'no'
@@ -167,6 +171,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {'mode': 'passive'}
 map <F11> :SyntasticCheck
+map <F12> :SyntasticReset
+let g:syntastic_javascript_checkers = ['eslint']
 
 "" jedi-vim
 let g:jedi#completions_enabled = 0
