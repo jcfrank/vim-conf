@@ -91,6 +91,7 @@ Bundle 'https://github.com/ledger/vim-ledger.git'
 Bundle 'https://github.com/davidhalter/jedi-vim.git'
 Bundle 'https://github.com/Vimjas/vim-python-pep8-indent.git'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'fatih/vim-go'
 
 "" turn filetype on when vundle is over
 filetype plugin indent on     " required!
@@ -175,6 +176,9 @@ map <F12> :SyntasticReset
 let g:syntastic_javascript_checkers = ['eslint']
 
 "" jedi-vim
+"" <leader>d goes to definition.
+"" <leader>g goes to function.
+"" K shows documentation.
 let g:jedi#completions_enabled = 0
 let g:jedi#completions_command = "<C-]>"
 
@@ -182,3 +186,17 @@ let g:pymode_indent = 0
 
 "" indent guide
 let g:indent_guides_enable_on_vim_startup = 1
+
+"" vim-go
+"" GoDef jumps to definition.
+"" GoDefPop jumps back from definition.
+"" GoDecls searches definitions in current file.
+"" GoDeclsDir searches definitions in current folder.
+"" ]] jumps to next func.
+"" [[ jumps to previous func.
+"<C-]> and <C-t> calls GoDef and GoDefPop too.
+autocmd FileType go nmap <leader>d :GoDef<CR>
+autocmd FileType go nmap <leader>p :GoDefPop<CR>
+"GoDecls and GoDeclsDir depend on ctrlp.
+autocmd FileType go nmap <leader>l :GoDecls<CR>
+autocmd FileType go nmap <leader>s :GoDeclsDir<CR>
