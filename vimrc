@@ -200,3 +200,6 @@ autocmd FileType go nmap <leader>p :GoDefPop<CR>
 "GoDecls and GoDeclsDir depend on ctrlp.
 autocmd FileType go nmap <leader>l :GoDecls<CR>
 autocmd FileType go nmap <leader>s :GoDeclsDir<CR>
+autocmd FileType go nmap <leader>f :GoFmt<CR>
+autocmd FileType go nmap <leader>b :GoBuild<CR>
+autocmd FileType go nmap <leader>r :GoRun<CR>
